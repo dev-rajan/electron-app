@@ -1,0 +1,1 @@
+"use strict";const e=require("electron"),o=require("@electron-toolkit/preload"),r={};if(process.contextIsolated)try{e.contextBridge.exposeInMainWorld("electron",o.electronAPI),e.contextBridge.exposeInMainWorld("api",r)}catch(t){console.error(t)}else window.electron=o.electronAPI,window.api=r;
